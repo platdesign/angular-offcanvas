@@ -25,6 +25,17 @@
 	</div>
 
 
+### Css
+
+	[pd-offcanvas-cover="mainNav"] {
+		width: 300px;
+		transition: transform .3s;
+	}
+
+	[pd-offcanvas-cover="mainNav"].pd-offcanvas-cover-move {
+		transform: translateX( -300px );
+	}
+
 ### Events
 
 - `pdOffcanvas:toggle` Listener
