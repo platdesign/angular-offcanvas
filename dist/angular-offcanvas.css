@@ -1,0 +1,7 @@
+/*
+@project	angular-offcanvas
+@author		Christian Blaschke <mail@platdesign.de>
+@version	0.0.1
+@created	2015-01-27 02:11:21
+*/
+[pd-offcanvas-cover]{width:300px;-webkit-transition:-webkit-transform .3s;transition:transform .3s}[pd-offcanvas-cover].pd-offcanvas-cover-move{-webkit-transform:translateX(-300px);-ms-transform:translateX(-300px);transform:translateX(-300px)}

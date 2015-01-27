@@ -1,0 +1,12 @@
+
+[pd-offcanvas-cover] {
+
+	$width: 300px;
+
+	width: $width;
+	transition: transform .3s;
+
+	&.pd-offcanvas-cover-move {
+		transform: translateX( 0 - $width );
+	}
+}
