@@ -1,16 +1,16 @@
 'use strict';
 
 var gulp = require('gulp');
-var fs = require('fs');
 
-var banner = fs.readFileSync('banner.txt', 'utf-8');
 
 // Register sass tasks
 var sass = require('pd-gulp-sass-task')(gulp);
 
 sass.register({
 	options:{
-		banner: banner
+		banner: {
+			file: './banner.txt'
+		}
 	},
 	assets: {
 		src: './src/*.scss',
@@ -29,7 +29,9 @@ var js = require('pd-gulp-js-task')(gulp);
 
 js.register({
 	options:{
-		banner: banner
+		banner: {
+			file: './banner.txt'
+		}
 	},
 	assets: {
 		src: './src/*.js',
