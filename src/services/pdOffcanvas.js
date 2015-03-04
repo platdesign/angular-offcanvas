@@ -12,7 +12,6 @@ module.exports = ['$rootScope', function($scope) {
 
 
 	this.register = function(id, el) {
-
 		var item = store[id] = store[id] || {};
 
 		item.id = id;
@@ -31,6 +30,7 @@ module.exports = ['$rootScope', function($scope) {
 
 
 	this.show = function(event, id) {
+
 		var item = store[id];
 		if(!item) { return; }
 
